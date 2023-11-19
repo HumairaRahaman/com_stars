@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.1" method="upgrade">
+	<name>com_test</name>
+	<author>ThemeXpert</author>
+	<creationDate>##Test##</creationDate>
+	<copyright>(C) 2005 - 2015 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@themexpert.com</authorEmail>
+	<authorUrl>www.themexpert.com</authorUrl>
+	<version>##Test_VERSION##</version>
+	<description>COM_TEST_XML_DESCRIPTION</description>
+	<namespace path="src/">TechFry\Component\Planets</namespace>
+	<scriptfile>script.php</scriptfile>
+
+	<files folder="site">
+	<folder>forms</folder>
+	<folder>src</folder>
+	<folder>tmpl</folder>
+	<filename>example.php</filename>
+	</files>
+
+	<filename plugin="example">example.php</filename>
+
+	<media folder="media" destination="com_example">
+	<filename>com_example_logo.png</filename>
+	<folder>css</folder>
+	<folder>js</folder>
+	</media>
+
+
+
+
+<administration>
+ <menu link="index.php?option=com_planets">COM_PLANETS_MENU</menu>
+ <files folder="admin">
+  <filename>access.xml</filename>
+  <filename>config.xml</filename>
+  <folder>forms</folder>
+  <folder>language</folder>
+  <folder>services</folder>
+  <folder>sql</folder>
+  <folder>src</folder>
+  <folder>tmpl</folder>
+ </files>
+</administration>
+
+<install>
+ <sql>
+  <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+ </sql>
+</install>
+
+<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">sql/uninstall.mysql.sql</file>
+		</sql>
+	</uninstall>
+
+<update>
+<schemas>
+<schemapath type="mysql">sql/updates/mysql</schemapath>
+</schemas>
+</update>
+
+</extension>

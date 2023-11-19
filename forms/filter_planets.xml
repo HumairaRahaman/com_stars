@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="filter">
+        
+        <field
+            name="search"
+            type="text"
+            inputmode="search"
+            label="COM_PLANETS_FILTER_SEARCH_LABEL"
+            hint="JSEARCH_FILTER" />
+            
+        <field
+            name="published"
+            type="status"
+            label="JOPTION_SELECT_PUBLISHED"
+            class="js-select-submit-on-change"
+            extension="com_stars">
+                <option value="">JOPTION_SELECT_PUBLISHED</option>
+        </field>
+
+    </fields>
+    
+    <fields name="list">
+        
+        <field
+            name="limit"
+            type="limitbox"
+            label="JGLOBAL_LIST_LIMIT"
+            onchange="this.form.submit();" />
+    
+    </fields>
+</form>
