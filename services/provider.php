@@ -7,14 +7,14 @@ use Joomla\CMS\Dispatcher\ComponentDispatcherFactoryInterface;
 use Joomla\CMS\MVC\Factory\MVCFactoryInterface;
 use Joomla\DI\Container;
 use Joomla\DI\ServiceProviderInterface;
-use TechFry\Component\Stars\Administrator\Extension\StarsComponent;
+use Joomla\Component\Stars\Administrator\Extension\StarsComponent;
 
 return new class implements ServiceProviderInterface
 {
     public function register(Container $container)
     {
-        $container->registerServiceProvider(new ComponentDispatcherFactory('\\TechFry\\Component\\Stars'));
-        $container->registerServiceProvider(new MVCFactory('\\TechFry\\Component\\Stars'));
+        $container->registerServiceProvider(new ComponentDispatcherFactory('\\Joomla\\Component\\Stars'));
+        $container->registerServiceProvider(new MVCFactory('\\Joomla\\Component\\Stars'));
     
         $container->set(
             ComponentInterface::class,

@@ -1,5 +1,5 @@
 <?php
-namespace TechFry\Component\Planets\Administrator\Table;
+namespace Joomla\Component\Stars\Administrator\Table;
 
 defined('_JEXEC') or die;
 

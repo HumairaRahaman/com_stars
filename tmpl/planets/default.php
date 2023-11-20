@@ -38,6 +38,18 @@ $wa->useScript('form.validate');
                     <?php echo $this->escape($row->title); ?>
                 </a>
             </th>
+            <th>
+                <?php echo HTMLHelper::_('grid.checkall'); ?>
+            </th>
+            <th>
+                <?php echo HTMLHelper::_('searchtools.sort', 'JSTATUS', 'a.published', $this->listDirn, $this->listOrder); ?>
+            </th>
+            <th>
+                <?php echo HTMLHelper::_('searchtools.sort', 'JGLOBAL_TITLE', 'a.title', $this->listDirn, $this->listOrder); ?>
+            </th>
+            <th>
+                <?php echo HTMLHelper::_('searchtools.sort', 'JGRID_HEADING_ID', 'a.id', $this->listDirn, $this->listOrder); ?>
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -49,5 +61,6 @@ $wa->useScript('form.validate');
         <?php endforeach; ?>
     </tbody>
 </table>
+<?php echo $this->pagination->getListFooter(); ?>
 </form>
 

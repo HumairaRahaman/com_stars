@@ -1,5 +1,5 @@
 <?php
-namespace TechFry\Component\Stars\Administrator\View\Planets;
+namespace Joomla\Component\Stars\Administrator\View\Planets;
 
 defined('_JEXEC') or die;
 
@@ -25,6 +25,14 @@ class HtmlView extends BaseHtmlView
         // Adding Filters
         $this->filterForm = $this->get('FilterForm');
         $this->activeFilters = $this->get('ActiveFilters');
+
+        $this->state = $this->get('State');
+
+        $this->listOrder = $this->escape($this->state->get('list.ordering'));
+        $this->listDirn = $this->escape($this->state->get('list.direction'));
+
+        // paginate
+        $this->pagination = $this->get('Pagination');
     
     }
 
@@ -37,5 +45,6 @@ class HtmlView extends BaseHtmlView
         ToolbarHelper::apply('planet.apply');
         ToolbarHelper::save('planet.save');
         ToolbarHelper::cancel('planet.cancel', 'JTOOLBAR_CLOSE');
+        ToolbarHelper::custom('planets.custom', 'ok', 'ok', 'Custom Button', false);
     }
 }

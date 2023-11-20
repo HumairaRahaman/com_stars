@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+
+    <fieldset name="general">
+
+        <field
+            name="id"
+            type="hidden"
+            label="ID"
+            default="0"
+            readonly="true" />
+
+        <field
+            name="title"
+            type="text"
+            label="JGLOBAL_TITLE"
+            required="true" />
+
+        <field
+            name="description"
+            type="editor"
+            label="Description" />
+
+        <field
+            name="published"
+            type="list"
+            label="JSTATUS"
+            class="form-select-color-state"
+            default="1"
+            validate="options">
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+            <option value="2">JARCHIVED</option>
+            <option value="-2">JTRASHED</option>
+        </field>
+
+    </fieldset>
+
+</form>
