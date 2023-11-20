@@ -12,12 +12,12 @@
 	<namespace path="src/">Joomla\Component\Stars</namespace>
 	<!-- <scriptfile>script.php</scriptfile> -->
 
-	<!-- <files folder="site"> -->
-	<!-- <folder>forms</folder> -->
-	<!-- <folder>src</folder> -->
-	<!-- <folder>tmpl</folder> -->
-	<!-- <filename>example.php</filename> -->
-	<!-- </files> -->
+	<files folder="site"> 
+	<folder>forms</folder>
+	<folder>src</folder>
+	<folder>tmpl</folder>
+	<filename>example.php</filename>
+	</files>
 
 	<!-- <filename plugin="example">example.php</filename> -->
 
@@ -31,7 +31,7 @@
 
 
 <administration>
- <menu link="index.php?option=com_planets">Stars</menu>
+ <menu link="index.php?option=com_stars">Stars</menu>
  <files folder="admin">
   <!-- <filename>access.xml</filename> -->
   <!-- <filename>config.xml</filename> -->
