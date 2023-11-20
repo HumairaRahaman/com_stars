@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="Single Planet">
+        <message>Display a single planet.</message>
+    </layout>
+</metadata>
+
+<fields name="params">
+    <fieldset name="basic" label="Options">            
+        <field
+            name="show_title"
+            type="list"
+            label="JGLOBAL_SHOW_TITLE_LABEL"
+            class="form-select-color-state">
+                <option value="1">JSHOW</option>
+                <option value="0">JHIDE</option>
+        </field> 
+                   
+    </fieldset>
+</fields>
+
+<fields name="request">
+    <fieldset name="request">        
+        <field
+            name="id"
+            type="number"
+            label="Planet"
+            required="true" />            
+    </fieldset>
+</fields>
+
+
+<metadata>
+    <layout title="Planets List">
+        <message>Displays a list of planets.</message>
+    </layout>
+</metadata>
