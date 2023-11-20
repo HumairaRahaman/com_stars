@@ -1,6 +1,6 @@
 <?php
 
-namespace TechFry\Component\Stars\Administrator\Controller;
+namespace Joomla\Component\Stars\Administrator\Controller;
 
 defined('_JEXEC') or die;
 
